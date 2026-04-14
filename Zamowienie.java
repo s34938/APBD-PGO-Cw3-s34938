@@ -14,4 +14,10 @@ public class Zamowienie {
         this.produkty = new ArrayList<>();
         this.oplacone = false;
     }
+
+    //metoda dodawania produktu
+    public void dodajProdukt(ProduktMenu produkt)
+    {
+        produkt.add(produkt);
+    }
 }
