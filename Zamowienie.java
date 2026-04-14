@@ -31,4 +31,10 @@ public class Zamowienie {
         }
         return suma;
     }
+
+    //metoda oznaczania jako opłacone
+    public void oznaczJakoOplacone()
+    {
+        this.oplacone = true;
+    }
 }
