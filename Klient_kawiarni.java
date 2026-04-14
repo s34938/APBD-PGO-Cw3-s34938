@@ -14,4 +14,9 @@ public class KlientKawiarni {
        this.email = email;
     }
 
+    //metoda zwracająca dane klienta
+    public String getDane()
+    {
+        return imie + " " + nazwisko + " , " + email;
+    }
 }
