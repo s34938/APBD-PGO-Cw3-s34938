@@ -44,6 +44,11 @@ public class Zamowienie {
         return kolejnyNumer;
     }
 
+    //liczenie liczby produktów (jest w main)
+    public int policzLiczbeProduktow() {
+        return produkty.size();
+    }
+
     @Override
     public String toString()
     {
