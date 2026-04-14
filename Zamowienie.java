@@ -37,4 +37,10 @@ public class Zamowienie {
     {
         this.oplacone = true;
     }
+
+    //metoda pobieranie następnego numeru
+    public static int pobierzKolejnyNumer()
+    {
+        return kolejnyNumer;
+    }
 }
