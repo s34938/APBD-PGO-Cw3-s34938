@@ -12,4 +12,19 @@ public class ProduktMenu {
         this.kategoria = kategoria;
         liczbaProduktow;
     }
+
+    public String getKod()
+    {
+        return kod;
+    }
+
+    public double getCena()
+    {
+        return Cena;
+    }
+
+    public static int getLiczbaProduktow()
+    {
+        return liczbaProduktow;
+    }
 }
