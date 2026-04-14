@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Klient_Kawiarni {
+public class KlientKawiarni {
     private int idKlienta;
     private String imie;
     private String nazwisko;
