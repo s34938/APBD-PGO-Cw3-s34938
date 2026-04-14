@@ -20,4 +20,15 @@ public class Zamowienie {
     {
         produkt.add(produkt);
     }
+
+    //metoda liczenia ceny produktów
+    public double policzWartosc()
+    {
+        double suma = 0;
+        for(ProduktMenu p : produkty)
+        {
+            suma += p.getCena();
+        }
+        return suma;
+    }
 }
