@@ -18,7 +18,7 @@ public class Zamowienie {
     //metoda dodawania produktu
     public void dodajProdukt(ProduktMenu produkt)
     {
-        produkt.add(produkt);
+        produkty.add(produkt);
     }
 
     //metoda liczenia ceny produktów
@@ -42,5 +42,14 @@ public class Zamowienie {
     public static int pobierzKolejnyNumer()
     {
         return kolejnyNumer;
+    }
+
+    @Override
+    public String toString()
+    {
+        return  "Zamówienie nr: " + numerZamowienia +
+                "\nKlient: " + klient.getDane() +
+                "\nProdukty:\n" + produkty +
+                "\nStatus" + (oplacone ? "Opłacone" : "Nieopłacone");
     }
 }
