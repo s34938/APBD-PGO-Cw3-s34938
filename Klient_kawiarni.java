@@ -19,4 +19,11 @@ public class KlientKawiarni {
     {
         return imie + " " + nazwisko + " , " + email;
     }
+
+    //override danych klientów
+    @Override
+    public String toString()
+    {
+        return "ID klienta: " + idKlienta + " | " + getDane();
+    }
 }
