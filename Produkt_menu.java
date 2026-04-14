@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class ProduktMenu {
     private String kod;
     private String nazwa;
@@ -10,7 +12,7 @@ public class ProduktMenu {
         this.nazwa = nazwa;
         this.cena = cena;
         this.kategoria = kategoria;
-        liczbaProduktow;
+        liczbaProduktow++;
     }
 
     public String getKod()
@@ -20,7 +22,7 @@ public class ProduktMenu {
 
     public double getCena()
     {
-        return Cena;
+        return cena;
     }
 
     public static int getLiczbaProduktow()
@@ -32,7 +34,17 @@ public class ProduktMenu {
     @Override
     public String toString()
     {
-        return "Produkt: " + mazwa + ", Kod: " + kod + ", Cena: " +
+        return "Produkt: " + nazwa + ", Kod: " + kod + ", Cena: " +
                 cena + "zł, Kategoria: " + kategoria;
+    }
+
+    //nadpisywanie object equals
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        ProduktMenu other = (ProduktMenu) obj;
+        return Objects.equals(kod, other.kod);
     }
 }
