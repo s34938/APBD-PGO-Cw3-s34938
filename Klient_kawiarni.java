@@ -26,4 +26,14 @@ public class KlientKawiarni {
     {
         return "ID klienta: " + idKlienta + " | " + getDane();
     }
+
+    //Override equals porównujące po ID klienta  albo emailu
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        KlientKawiarni other = (KlientKawiarni) obj;
+        return idKlienta == other.idKlienta || Objects.equals(email, other.email);
+    }
 }
