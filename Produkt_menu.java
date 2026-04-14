@@ -27,4 +27,12 @@ public class ProduktMenu {
     {
         return liczbaProduktow;
     }
+
+    //nadpisywanie produktów i ich wartości
+    @Override
+    public String toString()
+    {
+        return "Produkt: " + mazwa + ", Kod: " + kod + ", Cena: " +
+                cena + "zł, Kategoria: " + kategoria;
+    }
 }
